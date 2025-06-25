@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Resources/style.css">
+    <title>
+        Plamena Pavlova
+    </title>
+
+</head>
+
+<body>
+    <p> Personal Portfolio </p>
+    <br> </br>
+    <h1>FOR ME </h1>
+    <br> </br>
+
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="ForMe.html">
+                    <span class="icon">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                    <span class="text">For Me</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Education.html">
+                    <span class="icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                    <span class="text">Education</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="CV.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="text">CV</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Contacts.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contacts</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <center>
+
+        <img src="../Resources/Images/Me.jpg" alt="Me" style="width:180px; border-radius: 50%; display: inline-block;">
+    </center>
+    <br> </br>
+    <h3>
+        I am Plamena Pavlova and I am a student at First Private Mathematical Gymnasium in Sofia, Bulgaria. <br>
+        I have a lot of different interests, programs that I have attended to and intriguing hobbies.
+    </h3>
+    <br> </br>
+    <br> </br>
+
+    <div class="containerForMe"> </div>
+
+    <div class="container2">
+        <div class="image-container">
+            <div class="image"> <img src="../Resources/Images/Piano.jpg" alt="Piano image"> </div>
+
+            <div class="image"> <img src="../Resources/Images/2.jpg" alt="Mountain image"> </div>
+
+            <div class="image"> <img src="../Resources/Images/Gym.jpg" alt="Gym image"> </div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="" alt="">
+
+        </div>
+
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+    <div class="containerBubble">
+
+        <div class="chat-bubble">
+            <br>I have been playing the piano for almost 10 years. After many years of practicing I am able to play
+            famous piano pieces such as River flows in you and many others.
+        </div>
+
+        <div class="chat-bubble2"> <br> Spending time in the nature, climbing in the mounatins and enjoying amazing
+            views has alays been a passion of mine. Especially when I am surrounded with a great group of friends.
+        </div>
+
+        <div class="chat-bubble3"> <br> I’ve been passionate about folk dancing since childhood — it’s a joyful part of who I am. I also enjoy other sports like tennis, basketball, and going to the gym. </div>
+            
+            <h4 style="position: relative; left: 800px;"> </h4>
+            
+            <h4>  </h4>
+        
+            <h4> </h4>
+
+
+
+
+    </div>
+    <br> </br>
+    <br> </br>
+    <br> </br>
+   
+
+    <footer>
+        <p>© 2025 Plamena Pavlova. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>
